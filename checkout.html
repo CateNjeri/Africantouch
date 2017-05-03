@@ -257,7 +257,10 @@
 													<textarea rows="3" id="textarea" class="span12"></textarea>
 												</div>
 											</div>
-											<button class="btn btn-inverse pull-right">Confirm order</button>
+											<div class="popup" onclick="myFunction()"> <button class="btn btn-inverse pull-right " >Confirm order</button> <span class="popuptext" id="myPopup">Thank you! We will inform you the shipping details.</span></div>
+											<!-- <div class="popup" onclick="myFunction()">Confirm order
+                                             <span class="popuptext" id="myPopup">Thank you!</span>
+                                            </div> -->
 										</div>
 									</div>
 								</div>
@@ -304,6 +307,13 @@
 				<span>Copyright 2017 African Touch .</span>
 			</section>
 		</div>
+		<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
 		<script src="themes/js/common.js"></script>
 		</body>
 </html>
